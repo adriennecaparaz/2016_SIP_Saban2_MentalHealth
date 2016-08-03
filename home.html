@@ -8,41 +8,46 @@
 	<script src = "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	<style>
 	.carousel-control.left, .carousel-control.right {
-   background-image:none !important;
-   filter:none !important;
-   }
+		background-image:none !important;
+		filter:none !important;
+	}
    
 	.carousel-inner .item img {
 		margin: auto;
 		height: 350px;
-		}
+	}
 		
-.btn-circle.btn-lg {
-  width: 130px;
-  height: 130px;
-  padding: 10px 16px;
-  font-size: 15px;
-  line-height: 1.33;
-  border-radius: 70px;
-  background-color: #fff4d2;
-  border-color: #fff0c0;
-}
+	.btn-circle.btn-lg {
+		width: 130px;
+		height: 130px;
+		padding: 10px 16px;
+		font-size: 15px;
+		line-height: 1.33;
+		border-radius: 70px;
+		background-color: #fff4d2;
+		border-color: #fff0c0;
+	}
 
-.btn-circle.btn-xl {
-  width: 150px;
-  height: 150px;
-  padding: 10px 16px;
-  font-size: 18px;
-  line-height: 1.33;
-  border-radius: 75px;
-  background-color: #fff4d2;
-  border-color: #fff0c0;
-}
+	.btn-circle.btn-xl {
+		width: 150px;
+		height: 150px;
+		padding: 10px 16px;
+		font-size: 18px;
+		line-height: 1.33;
+		border-radius: 75px;
+		background-color: #fff4d2;
+		border-color: #fff0c0;
+	}
 
-.navbar {
-background-color: #fff7df;
-border-color: #fff0c0;
-}
+	.navbar {
+		background-color: #fff7df;
+		border-color: #fff0c0;
+	}
+
+	.dropdown .dropdown-menu {
+		background-color: #fff7df;
+		border-color: #fff0c0;
+	}
 	</style>
 </head>
 <body>
@@ -61,10 +66,15 @@ border-color: #fff0c0;
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
-		<li><a href="#">Check-In</a></li>
-		<li><a href="#">Resources</a></li>
-		<li><a href="#">Distractions</a></li>       
+        <li class="active"><a href="home.html">Home<span class="sr-only">(current)</span></a></li>
+		<li><a href="check.html">Check-In</a></li>
+		<li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="information.html">Information</a></li>
+            <li><a href="links.html">Links</a></li>
+          </ul>
+		<li><a href="distractions.html">Distractions</a></li>       
       </ul>
     </div>
   </div>
@@ -108,9 +118,9 @@ border-color: #fff0c0;
 
 <!-- link buttons -->
 <center>
-<button type="button" class="btn btn-default btn-circle btn-lg">resources</button>&nbsp;&nbsp;
-<button type="button" class="btn btn-default btn-circle btn-xl">check in</i></button>&nbsp;&nbsp;
-<button type="button" class="btn btn-default btn-circle btn-lg">distractions</button>
+<a href="resources.html"><button type="button" class="btn btn-default btn-circle btn-lg">resources</button></a>&nbsp;&nbsp;
+<a href="check.html"><button type="button" class="btn btn-default btn-circle btn-xl">check in</i></button></a>&nbsp;&nbsp;
+<a href="distractions.html"><button type="button" class="btn btn-default btn-circle btn-lg">distractions</button></a>
 </center>
 <!-- end buttons -->
 
