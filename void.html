@@ -6,11 +6,8 @@
 	<link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/lumen/bootstrap.min.css">
 	<script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<script src = "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src = "http://code.jquery.com/jquery.min.js"></script>
 	<style>
-	body {
-	background-color: #fefefe;
-	}
-	
 	.carousel-control.left, .carousel-control.right {
 		background-image:none !important;
 		filter:none !important;
@@ -31,10 +28,6 @@
 		background-color: #fff4d2;
 		border-color: #fff0c0;
 	}
-<<<<<<< HEAD
-
-=======
->>>>>>> 005c075cb9342b886e2a0ed5b6c5db54b7df9d80
 	.btn-circle.btn-xl {
 		width: 150px;
 		height: 150px;
@@ -45,11 +38,12 @@
 		background-color: #fff4d2;
 		border-color: #fff0c0;
 	}
-<<<<<<< HEAD
-
-=======
->>>>>>> 005c075cb9342b886e2a0ed5b6c5db54b7df9d80
 	.navbar {
+		background-color: #fff7df;
+		border-color: #fff0c0;
+	}
+	
+	.dropdown .dropdown-menu {
 		background-color: #fff7df;
 		border-color: #fff0c0;
 	}
@@ -58,51 +52,14 @@
 		padding: 3px;
 	}
 	
-	.dropdown .dropdown-menu {
-		background-color: #fff7df;
-		border-color: #fff0c0;
-	}
+	textarea {
+		width: 75%;
+		height: 50%;
+	} 
 	
-	#carouselgood {
-	width: 50%;
-	float: left;
-	}
 	
-	#carouselgood img {
-	height: auto;
-	}
-	
-	#carouselbad {
-	width: 50%;
-	float: right;
-	}
-	
-	#carouselbad img{
-	height: auto;
-	}
-	
-<<<<<<< HEAD
-=======
-	a {
-	color: #ebb52d;
-	}
-	
-	a:hover {
-	color: #6b6b6b;
-	}
-	
-	a:active {
-	color: black;
-	}
-	
-	ul {
-	list-style-position: inside;
-	text-align: left; 
-	white-space: nowrap;
-	}
-	
->>>>>>> 005c075cb9342b886e2a0ed5b6c5db54b7df9d80
 	</style>
+	
 </head>
 <body>
 <!-- begin nav -->
@@ -115,9 +72,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">
-		<img alt="Brand" src="icon.png">
-	  </a>
+      <a class="navbar-brand" href="#"><img src="icon.png"></a>
     </div>
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -136,19 +91,35 @@
   </div>
 </nav> <!-- end nav -->
 <center>
-	<img src="hopefulhead.png">
-<<<<<<< HEAD
-=======
-	<h3><i>"We must accept finite disappointment, but never lose infinite hope."</i></h3> 
-	<p> - Martin Luther King Jr. </p> 
+	<img src="voidhead.png">
+	<BR><BR>
+	<p id="demo"></p>
 	<br>
-	<div style="width: 25%; margin-left: auto; margin-right: auto; ">
-	<p><ul> 
-		<li><a href="http://www.beingwellwithin.com/blog/stay-hopeful/">How to Stay Hopeful</a></li> <li><a href="http://www.pickthebrain.com/blog/7-ways-to-maintain-a-positive-attitude/">7 Ways to Maintain a Positive Attitude</a></li> 
-		<li><a href="http://mainetoday.com/blog/how-to-be-an-optimist-4-steps-for-putting-optimism-in-action/">Putting Optimism into Action</a></li>
-		<li><a href="http://www.rd.com/health/wellness/easy-new-years-resolution-be-happy/">Benefits to Optimism</a></li>
-	</ul></p></div>
->>>>>>> 005c075cb9342b886e2a0ed5b6c5db54b7df9d80
+	<textarea rows="15" cols="150" id="vent">
+	
+	</textarea>
+	 
+	<p>Click the button to display your text and see it slowly fade away!</p>
+
+	<button onclick="myFunction()">Print</button>
+	<button onclick="myFunction2()">Let it go</button>
+
+	<script>
+		
+		function myFunction() {
+		
+			 var x = document.getElementById("vent").value;
+			 document.getElementById("demo").innerHTML = x;
+	
+		}		
+		
+		function myFunction2() {
+			$('#demo').delay(3000).fadeOut();
+			
+		}
+		
+		
+
 </center>
 </body>
 </html>
