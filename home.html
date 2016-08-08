@@ -7,6 +7,10 @@
 	<script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<script src = "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	<style>
+	body {
+	background-color: #fefefe;
+	}
+	
 	.carousel-control.left, .carousel-control.right {
 		background-image:none !important;
 		filter:none !important;
@@ -14,7 +18,7 @@
    
 	.carousel-inner .item img {
 		margin: auto;
-		height: 350px;
+		height: auto;
 	}
 		
 	.btn-circle.btn-lg {
@@ -24,7 +28,7 @@
 		font-size: 15px;
 		line-height: 1.33;
 		border-radius: 70px;
-		background-color: #fff4d2;
+		background-color: #fff7df;
 		border-color: #fff0c0;
 	}
 
@@ -35,17 +39,17 @@
 		font-size: 18px;
 		line-height: 1.33;
 		border-radius: 75px;
-		background-color: #fff4d2;
+		background-color: #fff7df;
 		border-color: #fff0c0;
 	}
 
 	.btn-circle:hover {
-		background-color: #fff4d2;
+		background-color: #fff7df;
 		border-color: #fff0c0;
 	}
 	
 	.btn-circle:active:focus {
-		background-color: #fff4d2;
+		background-color: #fff7df;
 		border-color: #fff0c0;
 	}
 	
@@ -83,7 +87,8 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="active"><a href="home.html">Home<span class="sr-only">(current)</span></a></li>
-		<li><a href="check.html">Check-In</a></li>
+		<li><a href="about.html">About Us</a></li>
+		<li><a href="check.html">Check In</a></li>
 		<li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources <span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -92,6 +97,9 @@
           </ul>
 		<li><a href="distractions.html">Distractions</a></li>       
       </ul>
+	  <ul class="nav navbar-nav navbar-right">
+        <li><a href="emergency.html">Panic Button</a></li>
+	  </ul>
     </div>
   </div>
 </nav> <!-- end nav -->
@@ -134,7 +142,8 @@
 <!-- link buttons -->
 <center>
 <a href="resources.html"><button type="button" class="btn btn-default btn-circle btn-lg">resources</button></a>&nbsp;&nbsp;
-<a href="check.html"><button type="button" class="btn btn-default btn-circle btn-xl">check in</button></a>&nbsp;&nbsp;
+<a href="check.html"><button type="button" class="btn btn-default btn-circle btn-lg">check in</button></a>&nbsp;&nbsp;
+<a href="void.html"><button type="button" class="btn btn-default btn-circle btn-lg">the void</button></a>&nbsp;&nbsp;
 <a href="distractions.html"><button type="button" class="btn btn-default btn-circle btn-lg">distractions</button></a>
 </center>
 <!-- end buttons -->
