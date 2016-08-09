@@ -7,6 +7,10 @@
 	<script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<script src = "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	<style>
+	body {
+	background-color: #fefefe;
+	}
+	
 	.carousel-control.left, .carousel-control.right {
    background-image:none !important;
    filter:none !important;
@@ -123,7 +127,7 @@ background-color: #fff;
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="home.html">
 		<img alt="Brand" src="icon.png">
 	  </a>
     </div>
@@ -131,14 +135,15 @@ background-color: #fff;
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li><a href="home.html">Home<span class="sr-only">(current)</span></a></li>
-		<li class="active"><a href="about.html">About Us</a></li>
+		<li><a href="about.html">About Us</a></li>
 		<li><a href="check.html">Check In</a></li>
 		<li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="information.html">Information</a></li>
-            <li><a href="links.html">Links</a></li>
+            <li class="active"><a href="links.html">Links</a></li>
           </ul>
+		<li><a href="the_void.html">The Void</a></li>
 		<li><a href="distractions.html">Distractions</a></li>       
       </ul>
 	  <ul class="nav navbar-nav navbar-right">
@@ -154,7 +159,7 @@ background-color: #fff;
 	
 	<!-- start accordion -->
 	<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-  <div class="panel">
+  <div class="panel" style="margin-bottom: 5px;">
     <div class="panel-heading" role="tab" id="headingOne">
       <h4 class="panel-title">
         <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">

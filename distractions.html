@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 
@@ -19,6 +18,10 @@
 
 	
 <style>
+body {
+	background-color: #fefefe;
+	}
+
 	.carousel-control.left, .carousel-control.right {
    background-image:none !important;
    filter:none !important;
@@ -64,7 +67,7 @@ border-color: #fff0c0;
 	}
 	
 	
-	.btn-circle:hover {
+		.btn-circle:hover {
 		background-color: #fff7df;
 		border-color: #fff0c0;
 	}
@@ -73,6 +76,7 @@ border-color: #fff0c0;
 		background-color: #fff7df;
 		border-color: #fff0c0;
 	}
+	
 
 	
 	.dropdown .dropdown-menu {
@@ -139,6 +143,15 @@ border-color: #fff0c0;
 		sleep.pause();
 		campfire.play();
 	}
+	
+	function StopSound(){
+		nature.pause();
+		oceanwaves.pause ();
+		rainthunder.pause ();
+		campfire.pause ();
+		sleep.pause();
+	}
+	
 </script>
 
 <!--end sounds-->
@@ -157,7 +170,7 @@ border-color: #fff0c0;
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <div style="float:right; margin-top:15px; margin-right:3px;"><a href="http://tumblings.net/post/44212620655/tumblreffects" target="_blank"><img alt="Tumblr Codes" src="http://static.tumblr.com/0szq8b5/S6emmopjv/credit.png"></a>
 </div><script type="text/javascript" src="http://static.tumblr.com/ikeq9mi/DfYl6o46t/scrolltotop.min.js"></script>
-<a href="javascript:;" id="scrollToTop" rel="nofollow" title="Go to Top"><img src="scroll.png" title="Go to Top" alt="Go to Top" style="width:60px"></a>
+<a href="javascript:;" id="scrollToTop" rel="nofollow" title="Go to Top"><img src="scroll.png" title="Go to Top" alt="Go to Top" onclick="StopSound()" style="width:60px"></a>
 
 <!--scroll to top end-->
 
@@ -205,6 +218,7 @@ border-color: #fff0c0;
             <li><a href="information.html">Information</a></li>
             <li><a href="links.html">Links</a></li>
           </ul>
+		  <li><a href="the_void.html">The Void</a></li>
 		<li class="active"><a href="distractions.html">Distractions</a></li>       
       </ul>
 	  <ul class="nav navbar-nav navbar-right">
@@ -292,267 +306,4 @@ border-color: #fff0c0;
 
 
 </body>
-=======
-<!DOCTYPE html>
-<html>
-
-
-<head>
-	<meta charset = "utf-8">
-	<meta name = "viewpoint" content = "width = device-width, initial-scale = 1">
-	<link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/lumen/bootstrap.min.css">
-	<link rel= "stylesheet" src ="distractions.css">
-	<script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-	<script src = "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js" type="text/javascript"></script> 
-	<script src="jquery.localscroll.js" type="text/javascript"></script> 
-	<script src="jquery.scrollTo.js" type="text/javascript"></script> 
-	<script src="distractions.js"></script>
-    
-
-
-	
-<style>
-	.carousel-control.left, .carousel-control.right {
-   background-image:none !important;
-   filter:none !important;
-   }
-   
-	.carousel-inner .item img {
-		margin: auto;
-		height: 350px;
-		}
-		
-.btn-circle.btn-lg {
-  width: 130px;
-  height: 130px;
-  padding: 10px 16px;
-  font-size: 15px;
-  color: #fff7df
-  line-height: 1.33;
-  border-radius: 70px;
-  background-color: #fff4d2;
-  border-color: #fff0c0;
-}
-.btn-circle.btn-xl {
-  width: 130px;
-  height: 130px;
-  padding: 10px 16px;
-  font-size: 15px;
-  line-height: 1.33;
-  border-radius: 75px;
-  background-color: #fff4d2;
-  border-color: #fff0c0;
-}
-.navbar {
-background-color: #fff7df;
-border-color: #fff0c0;
-}
-	</style>
-
-
-<!--sounds-->
-	<script>
-	var sleep=new Audio();
-		sleep.src="sleep relaxation.mp3";
-	function PlaySound1(){
-		nature.pause();
-		oceanwaves.pause ();
-		rainthunder.pause ();
-		campfire.pause ();
-		sleep.pause();
-		sleep.play();
-	}
-	
-	var nature = new Audio();
-		nature.src="naturesounds.mp3";
-	function PlaySound2 (){
-		nature.pause();
-		oceanwaves.pause ();
-		rainthunder.pause ();
-		campfire.pause ();
-		sleep.pause();
-		nature.play();
-	}
-	
-	var oceanwaves = new Audio();
-		oceanwaves.src="ocean waves.wav";
-	function PlaySound4 (){
-		nature.pause();
-		oceanwaves.pause ();
-		rainthunder.pause ();
-		campfire.pause ();
-		sleep.pause();
-		oceanwaves.play();
-	}
-		
-		var rainthunder = new Audio();
-		rainthunder.src="rain with thunder.mp3";
-	function PlaySound5 (){
-		nature.pause();
-		oceanwaves.pause ();
-		rainthunder.pause ();
-		campfire.pause ();
-		sleep.pause();
-		rainthunder.play();
-	}
-	
-	var campfire = new Audio();
-		campfire.src="campfire crackles.mp3";
-	function PlaySound6 (){
-		nature.pause();
-		oceanwaves.pause ();
-		rainthunder.pause ();
-		campfire.pause ();
-		sleep.pause();
-		campfire.play();
-	}
-</script>
-
-<!--end sounds-->
-
-<style type='text/css'>
-#scrollToTop:link, 
-#scrollToTop:visited {
-  display: none;
-  position: fixed;
-  top: 20px;
-  right: 20px;
-}
-</style>
-
-<!--scroll to top button-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<div style="float:right; margin-top:15px; margin-right:3px;"><a href="http://tumblings.net/post/44212620655/tumblreffects" target="_blank"><img alt="Tumblr Codes" src="http://static.tumblr.com/0szq8b5/S6emmopjv/credit.png"></a>
-</div><script type="text/javascript" src="http://static.tumblr.com/ikeq9mi/DfYl6o46t/scrolltotop.min.js"></script>
-<a href="javascript:;" id="scrollToTop" rel="nofollow" title="Go to Top"><img src="scroll.png" title="Go to Top" alt="Go to Top" style="width:60px"></a>
-
-<!--scroll to top end-->
-
-</head>
-
-<body>
-
-
-<!--not sure tbh-->
-
-<script type="text/javascript">
-
-	$(document).ready(function() {
-	$('#nav').localScroll({duration:1000});
-	});
-
-</script>
-
-<!--end not sure-->
-
-
-<!-- begin nav -->
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">( S )</a>
-    </div>
-
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="home.html">Home<span class="sr-only">(current)</span></a></li>
-		<li><a href="check.html">Check-In</a></li>
-		<li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="information.html">Information</a></li>
-            <li><a href="links.html">Links</a></li>
-          </ul>
-		<li><a href="distractions.html">Distractions</a></li>       
-      </ul>
-    </div>
-  </div>
-</nav> <!-- end nav -->
-<br><br>
-<center>
-<img src="distractions.png">
-<br><br><br><br><br><br><br>
-
-<!-- link buttons, making the audio id, and making the page jump-->
-
-<center> <div id="nav" class="clearfix">
-
-<audio id="nature"></audio>
-<audio id="oceanwaves"></audio>
-<audio id="rainthunder"></audio>
-<audio id="sleep"></audio>
-<audio id="campfire"></audio>
-
-<button type="button1" class="btn btn-default btn-circle btn-lg"> <a href="#headline1" style="color:#A9A9A9; text_decoration:none;" onclick="PlaySound1()"> Windmill </a> </button>&nbsp;&nbsp;
-<button type="button2" class="btn btn-default btn-circle btn-xl"> <a href="#headline2" style="color:#A9A9A9; text_decoration:none;" onclick="PlaySound2()"> Tree </a> </button>&nbsp;&nbsp;
-<button type="button3" class="btn btn-default btn-circle btn-lg"> <a href="#headline3" style="color:#A9A9A9; text_decoration:none;" onclick="PlaySound2()"> River </a> </button>&nbsp;&nbsp;
-<button type="button4" class="btn btn-default btn-circle btn-lg"> <a href="#headline4" style="color:#A9A9A9; text_decoration:none;" onclick="PlaySound4()"> Clouds </a> </button>&nbsp;&nbsp;
-<button type="button5" class="btn btn-default btn-circle btn-xl"> <a href="#headline5" style="color:#A9A9A9; text_decoration:none;" onclick="PlaySound5()"> Rainy Day </a> </button>&nbsp;&nbsp;
-<button type="button6" class="btn btn-default btn-circle btn-lg"> <a href="#headline6" style="color:#A9A9A9; text_decoration:none;" onclick="PlaySound6()"> Fire </a> </button>
-
-</div></center>
-
-<!-- end buttons -->
-
-</center>
-
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-
-
-<!--sets up sections for page jumping-->
-
-<div class="section">
- <h1><a name="headline1"></a></h1>
- <div id="windmill">
- <img src="windmill.gif" alt="windmill" style="width:100%;" />
-</div>
- 
-<div class="section">
- <h1><a name="headline2"> </a></h1>
- <div id="tree">
- <img src="tree.gif" style="width:100%;" />
-</div>
- 
-<div class="section">
- <h1><a name="headline3"> </a></h1>
-  <div id="river">
- <img src="river.gif" style="width:100%;" />
-</div>
-
-<div class="section">
- <h1><a name="headline4"> </a></h1>
-  <div id="clouds">
- <img src="clouds.gif" style="width:100%;" >
- </div>
-</div>
-
-<div class="section">
- <h1><a name="headline5"></a></h1>
-  <div id="rain">
- <img src="rain.gif" style="width:100%;" />
-</div>
-
-<div class="section">
- <h1><a name="headline6"> </a></h1>
- <div id="fire">
- <img src="fire.gif" style="width:100%;" />
-</div> 
-
-
-
-</div>
-<!--ends space coordination-->
-
-
-</body>
->>>>>>> b8756bac8e4e24a5433660822ada2237a3946309
 </html>

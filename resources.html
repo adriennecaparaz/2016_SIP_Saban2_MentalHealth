@@ -16,6 +16,11 @@
 		margin: auto;
 		height: 350px;
 	}
+	
+	.dropdown .dropdown-menu {
+		background-color: #fff7df;
+		border-color: #fff0c0;
+	}
 		
 	.btn-banner {
 		width: 100%;
@@ -75,21 +80,27 @@
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="home.html">
-		<img alt="Brand" src="icon.png"></a>
+		<img alt="Brand" src="icon.png">
+	  </a>
     </div>
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="home.html">Home<span class="sr-only">(current)</span></a></li>
-		<li><a href="check.html">Check-In</a></li>
+        <li><a href="home.html">Home<span class="sr-only">(current)</span></a></li>
+		<li><a href="about.html">About Us</a></li>
+		<li><a href="check.html">Check In</a></li>
 		<li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="information.html">Information</a></li>
             <li><a href="links.html">Links</a></li>
           </ul>
+		<li><a href="the_void.html">The Void</a></li>
 		<li><a href="distractions.html">Distractions</a></li>       
       </ul>
+	  <ul class="nav navbar-nav navbar-right">
+        <li><a href="emergency.html">Panic Button</a></li>
+	  </ul>
     </div>
   </div>
 </nav> <!-- end nav -->
